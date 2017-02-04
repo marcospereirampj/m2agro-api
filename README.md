@@ -15,6 +15,12 @@ que serão utilizados, assim com suas respectivas quantidades.
 * Mensalmente deve ser calculado o preço médio de cada produto. Para isso, deve ser 
 levado em consideração os valores dos serviços e as quantidades utilizadas de cada produto.
 * Os sistema deve permitir a integração com sistemas externos.
+* Não foram levantados requisitos de autenticação e segurança.
+
+## Sugestões ## 
+
+* Foi adicionado o campo **ponderador (weigh_price)** ao produto. Esse campo visa
+ ponderar o valor do produto em relação aos demais.
 
 ## Dependências ##
 
@@ -22,6 +28,11 @@ levado em consideração os valores dos serviços e as quantidades utilizadas de
 * [django 1.9.7](https://www.djangoproject.com/)
 * [djangorestframework 3.5.3](http://www.django-rest-framework.org/)
 * [django-filter 1.0.1](http://www.django-rest-framework.org/)
+
+## Outros Repositórios ##
+
+* Front-end: https://github.com/marcospereirampj/m2agro-frontend
+* Script - Teste Lógica: https://github.com/marcospereirampj/m2agro-script
 
 ## Demonstração ##
 
