@@ -14,9 +14,9 @@ class PriceProduct(models.Model):
     product = models.ForeignKey(Product, verbose_name=u"Produto")
     average_price = models.DecimalField(verbose_name=u"Preço Médio",
                                         decimal_places=3, max_digits=12)
-    creation_date = models.DateField(verbose_name="Data de Criação",
-                                     auto_created=True,
-                                     auto_now_add=True)
+    creation_date = models.DateTimeField(verbose_name="Data de Criação",
+                                         auto_created=True,
+                                         auto_now_add=True)
 
     def save(self, *args, **kwargs):
         super(PriceProduct, self).save(*args, **kwargs)
