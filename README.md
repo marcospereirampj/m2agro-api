@@ -28,6 +28,7 @@ levado em consideração os valores dos serviços e as quantidades utilizadas de
 * [django 1.9.7](https://www.djangoproject.com/)
 * [djangorestframework 3.5.3](http://www.django-rest-framework.org/)
 * [django-filter 1.0.1](http://www.django-rest-framework.org/)
+* [django-cors-headers 2.0.1](https://github.com/ottoyiu/django-cors-headers)
 
 ## Outros Repositórios ##
 
