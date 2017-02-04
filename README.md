@@ -21,19 +21,16 @@ levado em consideração os valores dos serviços e as quantidades utilizadas de
 
 * Foi adicionado o campo **ponderador (weigh_price)** ao produto. Esse campo visa
  ponderar o valor do produto em relação aos demais.
+* Foi adicionado um histórico de preços (**PriceProduct**). Ao adicionar um novo PriceProduct
+o valor do produto é atualizado automáticamente.
 
 ## Dependências ##
 
-
+* Python 3.5
 * [django 1.9.7](https://www.djangoproject.com/)
 * [djangorestframework 3.5.3](http://www.django-rest-framework.org/)
 * [django-filter 1.0.1](http://www.django-rest-framework.org/)
 * [django-cors-headers 2.0.1](https://github.com/ottoyiu/django-cors-headers)
-
-## Outros Repositórios ##
-
-* Front-end: https://github.com/marcospereirampj/m2agro-frontend
-* Script - Teste Lógica: https://github.com/marcospereirampj/m2agro-script
 
 ## API ##
 
@@ -116,10 +113,20 @@ Exemplo:
  * POST: Atulizar valores médios dos produtos utilizados no mês anterior.
 
 
+## Outros Repositórios ##
+
+* Front-end: https://github.com/marcospereirampj/m2agro-frontend
+* Script - Teste Lógica: https://github.com/marcospereirampj/m2agro-script
+
 ## Demonstração ##
 
 * API Rest: http://m2agro.marcospereirajr.com.br/api/
 * Front-end (AngularJS): http://m2agro.marcospereirajr.com.br/
+
+## Lições Aprendidas
+
+* Utilizar a PEP8
+* 
 
 
 
