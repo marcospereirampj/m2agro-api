@@ -90,6 +90,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.sites',
     'django.contrib.staticfiles',
+    'rest_framework',
     'harvest'
 ]
 
@@ -128,3 +129,12 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = normpath(join(SITE_ROOT, 'media'))
 
 MEDIA_URL = '/media/'
+
+
+# Django Rest Framework
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny'
+    ]
+}
