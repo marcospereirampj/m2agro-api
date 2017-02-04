@@ -15,6 +15,8 @@ class Service(models.Model):
     start_date = models.DateField(verbose_name="Data de Início")
     end_date = models.DateField(verbose_name=u"Data de Término")
     harvest = models.ForeignKey(Harvest, verbose_name=u"Safra")
+    cost = models.DecimalField(verbose_name=u"Custo Total",
+                               max_digits=13, decimal_places=3)
 
     def __str__(self):
         return self.name

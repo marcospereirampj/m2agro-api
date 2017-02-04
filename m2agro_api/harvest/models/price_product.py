@@ -28,6 +28,6 @@ class PriceProduct(models.Model):
 
     class Meta:
         app_label = 'harvest'
-        ordering = ['creation_date', ]
+        ordering = ['-creation_date', ]
         verbose_name = u'Preço Médio'
         verbose_name_plural = u'Preços Médio'
