@@ -12,7 +12,11 @@ class PriceProductSerializer(serializers.ModelSerializer):
         @author Marcos Pereira
     """
 
+    product_name = serializers.SerializerMethodField(source="get_product_name")
+
+    def get_product_name(self, obj):
+        return obj.product.name
+
     class Meta:
         model = PriceProduct
         fields = '__all__'
-        depth = 1

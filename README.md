@@ -101,12 +101,8 @@ Exemplo:
         "id": 2,
         "creation_date": "2017-02-04",
         "average_price": "12.000",
-        "product": {
-            "id": 1,
-            "name": "Diesel",
-            "last_average_price": "15.000",
-            "weigh_price": "1.00"
-        }
+        "product": 1,
+        "product_name":  "Diesel"
     }
  ```
 
