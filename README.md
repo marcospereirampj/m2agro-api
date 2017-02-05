@@ -83,7 +83,8 @@ Exemplo:
         "start_date": "2017-01-10",
         "end_date": "2017-02-01",
         "cost": "50.000",
-        "harvest": 1
+        "harvest": 1,
+        "harvest_name": "Soja 2017"
     }
  ```
 
@@ -109,8 +110,33 @@ Exemplo:
     }
  ```
 
+#### Produto Utilizados em Serviços- /api/product-service/{id} ####
+ * GET: Lista produtos utilizados ou retornar um objeto específico(passando o {id}).
+ * POST: Cria um novo registro de 'produto utilizado em um serviço'(não utilizar o {id}).
+ * PUT: Atualiza o objeto de um 'produto utilizado em um serviço' com id igual ao {id}(uso obrigatório).
+ * DELETE: Remove o objeto de um 'produto utilizado em um serviço' com id igual ao {id}(uso obrigatório).
+
+Exemplo:
+
+```
+    {
+        "id": 1,
+        "service_name": "Preparo do solo",
+        "product_name": "Diesel",
+        "amount": "10.000",
+        "service": 1,
+        "product": 1
+    }
+ ```
+
 #### Atualizar Preços dos Produtos - /api/update_products/ ####
  * POST: Atulizar valores médios dos produtos utilizados no mês anterior.
+
+
+## Integrações ##
+
+* Para possíveis integrações, podem ser utilizados os próprios recursos da API. No caso do exemplo passado,
+pode ser utilizado o recurso **/api/product/{id}**.
 
 
 ## Outros Repositórios ##
@@ -126,7 +152,7 @@ Exemplo:
 ## Lições Aprendidas
 
 * Utilizar a PEP8
-* 
+* Evitar _code smells_
 
 
 
