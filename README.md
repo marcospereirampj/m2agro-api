@@ -17,7 +17,7 @@ levado em consideração os valores dos serviços e as quantidades utilizadas de
 * Os sistema deve permitir a integração com sistemas externos.
 * Não foram levantados requisitos de autenticação e segurança.
 
-## Sugestões ## 
+## Sugestões
 
 * Foi adicionado o campo **ponderador (weigh_price)** ao produto. Esse campo visa
  ponderar o valor do produto em relação aos demais.
